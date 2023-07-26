@@ -13,7 +13,7 @@ public class LoginWithIdAndClass {
         driver.get("https://www.saucedemo.com/");
         driver.findElement(By.className("input_error")).sendKeys("standard_user");
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
-        driver.findElement(By.name("login-button")).click();
+        driver.findElement(By.xpath("//input[@type='submit']")).click();
         Thread.sleep(5000);
         driver.quit();
     }
