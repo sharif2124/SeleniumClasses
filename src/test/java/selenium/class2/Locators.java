@@ -1,4 +1,4 @@
-package selenium.seleniumclass2;
+package selenium.class2;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
