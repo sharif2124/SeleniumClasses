@@ -25,8 +25,8 @@ public class SelectTestDemo {
         select.selectByVisibleText("Magenta");
         Thread.sleep(3000);
 
-        for (WebElement webelement: select.getAllSelectedOptions()) {
-            System.out.println(webelement.getText());
+        for (WebElement webElement: select.getAllSelectedOptions()) {
+            System.out.println(webElement.getText());
 
         }
 
@@ -41,9 +41,7 @@ public class SelectTestDemo {
 
         multipleselect.selectByIndex(3);
         Thread.sleep(2000);
-
-        multipleselect.selectByValue("Audi");
-        Thread.sleep(2000);
+        driver.quit();
 
 
 
