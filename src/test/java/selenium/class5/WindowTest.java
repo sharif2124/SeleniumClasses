@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class WindowDemo {
+public class WindowTest {
     public static void main(String[] args) throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -32,9 +32,7 @@ public class WindowDemo {
         System.out.println("Original Window Heading Text: "+driver.findElement(By.className("main-header")).getText());
         Thread.sleep(1500);
         driver.quit();
-
         System.out.println("After Browser Quit: "+driver.findElement(By.className("main-header")).getText());
-
 
     }
 }
