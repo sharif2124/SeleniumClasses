@@ -10,23 +10,23 @@ import org.testng.annotations.BeforeMethod;
 
 public class BrowserLaunch {
     WebDriver driver;
-//@BeforeClass
-//    public void setUp(){
-//        WebDriverManager.chromedriver().setup();
-//        driver=new ChromeDriver();
-//    }
-    @BeforeMethod
-    public void setUp2(){
+@BeforeClass
+    public void setUp(){
         WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
     }
-//    @AfterClass
-//    public void closeBrowser(){
-//        driver.quit();
+//    @BeforeMethod
+//    public void setUp2(){
+//        WebDriverManager.chromedriver().setup();
+//        driver=new ChromeDriver();
 //    }
-    @AfterMethod
-    public void closeBrowser2() throws InterruptedException {
-    Thread.sleep(1000);
+    @AfterClass
+    public void closeBrowser(){
         driver.quit();
     }
+//    @AfterMethod
+//    public void closeBrowser2() throws InterruptedException {
+//    Thread.sleep(1000);
+//        driver.quit();
+//    }
 }
